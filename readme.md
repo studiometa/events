@@ -19,7 +19,7 @@ Import the package in your project and use the `on`, `once` and `off` functions 
 ```js
 import { on, off } from '@studiometa/events';
 
-const links = document.querySelector('a');
+const links = document.querySelectorAll('a');
 const preventDefault = e => e.preventDefault();
 
 on(links, 'click', preventDefault);
