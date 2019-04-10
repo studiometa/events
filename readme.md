@@ -1,6 +1,10 @@
 # Events
+
+[![NPM Version](https://img.shields.io/npm/v/@studiometa/events.svg?style=flat-square)](https://www.npmjs.com/package/@studiometa/events)
+[![Dependency Status](https://img.shields.io/david/studiometa/events.svg?label=deps&style=flat-square)](https://david-dm.org/studiometa/events)
+[![devDependency Status](https://img.shields.io/david/dev/studiometa/events.svg?label=devDeps&style=flat-square)](https://david-dm.org/studiometa/events?type=dev)
  
- Three small functions to ease events binding in Javascript.
+> Three small functions to ease events binding in Javascript.
 
 ## Installation
 
