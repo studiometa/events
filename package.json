@@ -1,6 +1,6 @@
 {
   "name": "@studiometa/events",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A small utility to add and remove event listeners",
   "main": "dist/index.js",
   "scripts": {
