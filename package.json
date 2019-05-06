@@ -6,8 +6,17 @@
   "scripts": {
     "test": "npm run lint",
     "lint": "eslint src/",
+    "fix": "eslint src/ --fix",
     "compile": "babel --plugins @babel/plugin-transform-runtime --out-dir dist/ src/",
     "prepare": "npm run compile"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "eslint src/ --fix",
+        "eslint src/"
+      ]
+    }
   },
   "repository": {
     "type": "git",
@@ -34,6 +43,7 @@
     "@babel/plugin-transform-runtime": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@studiometa/eslint-config": "^1.1.2",
-    "@studiometa/prettier-config": "^1.0.0"
+    "@studiometa/prettier-config": "^1.0.0",
+    "husky": "^2.2.0"
   }
 }
