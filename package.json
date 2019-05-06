@@ -27,9 +27,7 @@
     "url": "https://github.com/studiometa/events/issues"
   },
   "homepage": "https://github.com/studiometa/events#readme",
-  "dependencies": {
-    "lodash": "^4.17.11"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",

@@ -1,8 +1,10 @@
-import isString from 'lodash/isString';
-import isFunction from 'lodash/isFunction';
-import isElement from 'lodash/isElement';
-import isObject from 'lodash/isObject';
-import isArrayLike from 'lodash/isArrayLike';
+import {
+  isString,
+  isFunction,
+  isElement,
+  isObject,
+  isArrayLike,
+} from './utils/is';
 
 /**
  * Adds an event listener to a HTML element
