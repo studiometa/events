@@ -60,11 +60,21 @@ export function isObject(value) {
 }
 
 /**
+ * Test if a value has a length
+ *
+ * @param  {Mixed}  value  The value to test
+ * @return {Boolean}       The result of the test
+ */
+function hasLength(value) {
+  return 'length' in value;
+}
+
+/**
  * Test if a value is like an array
  *
  * @param  {Mixed}  value  The value to test
  * @return {Boolean}       The result of the test
  */
 export function isArrayLike(value) {
-  return !isNull(value) && isLength(value) && !isFunction(value);
+  return !isNull(value) && hasLength(value) && isLength(value.length) && !isFunction(value);
 }
