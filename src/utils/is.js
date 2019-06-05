@@ -76,5 +76,10 @@ function hasLength(value) {
  * @return {Boolean}       The result of the test
  */
 export function isArrayLike(value) {
-  return !isNull(value) && hasLength(value) && isLength(value.length) && !isFunction(value);
+  return (
+    !isNull(value) &&
+    hasLength(value) &&
+    isLength(value.length) &&
+    !isFunction(value)
+  );
 }
